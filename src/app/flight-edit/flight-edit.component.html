@@ -1,0 +1,34 @@
+<h1>Flight Edit</h1>
+
+<div *ngIf="message">
+    {{message}}
+</div>
+
+<div *ngIf="flight">
+
+<div class="form-group">
+    <label>Id</label>
+    <input class="form-control" [(ngModel)]="flight.id">
+</div>
+
+<div class="form-group">
+    <label>From</label>
+    <input class="form-control" [(ngModel)]="flight.from">
+</div>
+
+<div class="form-group">
+    <label>To</label>
+    <input class="form-control" [(ngModel)]="flight.to">
+</div>
+
+<div class="form-group">
+    <label>Date</label>
+    <input class="form-control" [(ngModel)]="flight.date">
+</div>
+
+<div class="form-group">
+    <button class="btn btn-default" (click)="save()">
+        Save
+    </button>
+</div>
+</div>
